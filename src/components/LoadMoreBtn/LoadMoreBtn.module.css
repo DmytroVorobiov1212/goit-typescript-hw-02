@@ -6,7 +6,7 @@
 
 .button {
     padding: 12px 24px;
-    background-color: #007aff;
+    background-color: rgba(29, 28, 28, 0.726);
     color: white;
     border: none;
     border-radius: 25px;
@@ -17,6 +17,6 @@
 }
 
 .button:hover {
-    background-color: #005ecb;
+    background-color: rgb(29, 28, 28);
     transform: translateY(-2px);
 }

@@ -25,7 +25,7 @@ function App() {
         setIsLoading(true);
         setError(false);
         const data = await fetchImages(query, page);
-        if (!images.length) {
+        if (!data.results.length) {
           toast.error("No Result! Please try again!");
         } else {
           setImages((prev) =>
@@ -41,7 +41,7 @@ function App() {
     };
 
     getImages();
-  }, [query, page, images]);
+  }, [query, page]);
 
   const handleSearch = (newQuery) => {
     if (newQuery === query) {
